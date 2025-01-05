@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <style>
+  
+        .chat_container{
+            max-width:800px;
+            width:100%;
+            margin:0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #topText{
+            width:100%;
+            height:75px;
+            margin:20px auto 10;
+        }
+        .bot_box{
+            width:100%;
+            padding:20px 0;
+            border: 1px solid #555;
+        }
+        .bot_box p{
+            height:50px;
+            text-align: center;
+            font-size: 25px;
+        }
+        #bot_img{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            background-image: url(./cat.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+      
+        .input_box{
+            width:100%;
+            height:40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 40px;
+        }
+        .input_box input{
+            width:65%;
+        }
+        .input_box input, .input_box > div{
+            height:100%;
+            padding:10px;
+            font-size: 18px;
+        }
+        .input_box > div{
+            width:25%;
+            height:110%;
+            cursor: pointer;
+            text-align: center;
+            background-color: rgb(133, 133, 133);
+        }
+
+    </style>
+</head>
+<body id="bg">
+    <div class="chat_container">
+        <div id="topText"></div>
+        <div class="bot_box">
+            <p id="bot_text">
+                냥냥이의 채팅봇
+            </p>
+        </div>
+        <div id="bot_img">
+            
+        </div>
+        
+        <div class="input_box">
+            <input id="input_text" type="text" placeholder="여기에 입력해보세요"> 
+            <div id="btn">보내기</div>
+        </div>   
+    </div>
+
+    <script src="./hj_bot.js"></script>
+
+</body>
+</html>
